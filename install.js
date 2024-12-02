@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/SUP3RMASS1VE/AdvancedLivePortrait-WebUI app",
+          "git clone https://github.com/jhj0517/AdvancedLivePortrait-WebUI app",
         ]
       }
     },
@@ -32,6 +32,12 @@ module.exports = {
           "pip install -r requirements.txt"
         ]
       }
-    }
+    },
+    {
+      method: "fs.link",
+      params: {
+        venv: "app/env"
+      }
+    },
   ]
 }
